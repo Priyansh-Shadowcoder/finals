@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good Luck on Finals!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <div class="emoji">🎓✨📚</div>
+        <h1>You've Got This!</h1>
+        <p>Wishing all my amazing friends the absolute best on the final exams. Take a deep breath, trust your hard work, and go crush those papers!</p>
+        
+        <button onclick="generateQuote()">Need a quick boost?</button>
+        
+        <div id="quote"></div>
+        <br><a href="surprise.html" class="nav-link">Need a break? Go to the Secret Zone 🤫</a>
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+        <h3>Pre-Exam Panic Meter</h3>
+        <input type="range" id="panic-slider" min="0" max="100" value="0" oninput="updatePanicLevel()">
+        <p id="panic-output" style="font-weight: bold; color: #667eea;">Dangerously calm. Are you sure you're taking the right exam?</p>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+        <button onclick="startHack()" id="hack-btn" style="background-color: #2d3748;">Predict My Final Grade</button>
+        
+        <div id="terminal" style="display: none;">
+            <div id="terminal-text"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
